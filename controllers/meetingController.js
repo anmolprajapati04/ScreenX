@@ -17,7 +17,7 @@ export const createMeeting = async (req, res) => {
             host: req.userId,
             status: 'active'
         });
-
+//
         await meeting.save();
         
         res.status(201).json({
