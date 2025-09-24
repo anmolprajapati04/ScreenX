@@ -31,7 +31,7 @@ export const register = async (req, res) => {
 
         await user.save();
 
-        // Generate token
+        // Generate token required
         const token = jwt.sign(
             { userId: user._id }, 
             process.env.JWT_SECRET, 
