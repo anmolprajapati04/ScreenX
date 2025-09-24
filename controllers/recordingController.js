@@ -19,7 +19,7 @@ export const startRecording = async (req, res) => {
             });
         }
 
-        // Check if user is host or co-host
+        // Check if user is host or co host in meeting
         const participant = meeting.participants.find(p => 
             p.userId && p.userId.toString() === req.userId
         );
